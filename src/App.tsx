@@ -155,7 +155,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>What's your favorite phone?</h2>
+        <h2>What's your favorite?</h2>
       </header>
       <TableContainer
         component={Paper}
