@@ -157,7 +157,7 @@ function App() {
       <TableContainer
         component={Paper}
         variant="outlined"
-        style={{ width: 1200, height: "101vh", margin: "auto" }}
+        style={{ width: 1200, height: "105vh", margin: "auto" }}
       >
         <Table>
         <h2>Vote for your favourite NFT Artwork?</h2>
