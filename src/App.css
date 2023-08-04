@@ -1,4 +1,14 @@
+<style>
+    body {
+      margin: 0; 
+      padding: 0; 
+    }
 
+    img {
+      display: block; 
+      width: 100%; 
+    }
+</style>
   
 .App {
   text-align: center;
