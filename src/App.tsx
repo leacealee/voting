@@ -3,7 +3,6 @@ import "./App.css";
 import {
   TableContainer,
   Table,
-  TableHead,
   TableRow,
   TableCell,
   TableBody,
@@ -34,9 +33,7 @@ const contract_id = {
   outputIndex: 0,
 };
 
-function byteString2utf8(b: ByteString) {
-  return Buffer.from(b, "hex").toString("utf8");
-}
+
 
 function App() {
   const [votingContract, setContract] = useState<Voting>();
@@ -155,31 +152,27 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>What's your favorite?</h2>
+        <h1>< img src={require("/public/logo.png")} alt="" /></h1>
       </header>
       <TableContainer
         component={Paper}
         variant="outlined"
-        style={{ width: 1200, height: "80vh", margin: "auto" }}
+        style={{ width: 1200, height: "101vh", margin: "auto" }}
       >
         <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell align="center">iPhone</TableCell>
-              <TableCell align="center">Android</TableCell>
-            </TableRow>
-          </TableHead>
+        <h2>Vote for your favourite NFT Artwork?</h2>
+          
           <TableBody>
             <TableRow>
               <TableCell align="center">
                 <Box>
                   <Box
                     sx={{
-                      height: 200,
+                      height: 500,
                     }}
                     component="img"
-                    alt={"iphone"}
-                    src={`${process.env.PUBLIC_URL}/${"iphone"}.png`}
+                    alt={"apple"}
+                    src={`${process.env.PUBLIC_URL}/${"apple"}.png`}
                   />
                 </Box>
               </TableCell>
@@ -187,11 +180,11 @@ function App() {
                 <Box>
                   <Box
                     sx={{
-                      height: 200,
+                      height: 500,
                     }}
                     component="img"
-                    alt={"android"}
-                    src={`${process.env.PUBLIC_URL}/${"android"}.png`}
+                    alt={"watermelon"}
+                    src={`${process.env.PUBLIC_URL}/${"watermelon"}.png`}
                   />
                 </Box>
               </TableCell>
@@ -252,7 +245,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            {`"${byteString2utf8(success.candidate)}" got one vote,  tx: ${
+            {`vote successful,  tx: ${
               success.txId
             }`}
           </Link>
