@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/voting/static/css/main.2a3d56fd.css",
-    "main.js": "/voting/static/js/main.646a2e7e.js",
+    "main.js": "/voting/static/js/main.cdcc71a1.js",
     "static/js/27.4c89b8ed.chunk.js": "/voting/static/js/27.4c89b8ed.chunk.js",
     "static/media/logo.png": "/voting/static/media/logo.0dcd5dcac8abb2d744fb.png",
     "index.html": "/voting/index.html"
   },
   "entrypoints": [
     "static/css/main.2a3d56fd.css",
-    "static/js/main.646a2e7e.js"
+    "static/js/main.cdcc71a1.js"
   ]
 }
